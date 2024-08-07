@@ -1,0 +1,37 @@
+{
+  
+  "type": "commonjs",
+  
+  "dependencies": {
+  
+    
+  "cors": "^2.8.5",
+  
+    
+  "ejs": "^3.1.10",
+  
+    
+  "express": "^4.19.2",
+  
+    
+  "morgan": "^1.10.0",
+  
+    
+  "mysql2": "^3.10.1"
+  
+  },
+  
+  "scripts": {
+  
+    
+  "dev": "nodemon index.cjs"
+  
+  },
+  
+  "devDependencies": {
+  
+    
+  "nodemon": "^3.1.3"
+  
+  }
+}
