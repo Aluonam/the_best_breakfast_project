@@ -1,6 +1,6 @@
 # the_best_breakfast_project
 
-![Esqueleto con algunos estilos](./img/image.png)
+![Esqueleto con algunos estilos](./img/image-app.png)
 
 **Esqueleto inicial**
 
@@ -11,6 +11,9 @@
 
 ![Mensaje consola esqueleto inicial](./img/image-1.png)
 
+**Ejemplo feedback al usuario**
+
+![Mensaje feedback](./img/image.png)
 
 
 **Fuentes**
