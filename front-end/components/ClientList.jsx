@@ -1,7 +1,8 @@
 // components/ClientList.js
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
+import styleClientList from './ClientList.module.css'
 
 const ClientList = () => {
 
@@ -11,6 +12,7 @@ const ClientList = () => {
         comida: '',
         bebida: ''
     })
+    const [serverMessage, setServerMessage] = useState('');
 
 
     const handleChange = (e) => {
@@ -26,6 +28,7 @@ const ClientList = () => {
         axios.post('http://localhost:3001/api/addclient', dataNewClient)
             .then(response => {
                 console.log('Datos enviados:', response.data);
+                setServerMessage('El cliente y su desayuno favorito ha sido añadido correctamente.');
                 //limpiar form una vez se han enviado los datos:
                 setDataNewClient({
                     nombre: '',
@@ -33,15 +36,17 @@ const ClientList = () => {
                     comida: '',
                     bebida: ''
                 });
+
             })
             .catch(error => {
                 console.error('Error al enviar datos:', error);
+                setServerMessage('Ha habido un error al enviar los datos.');
             });
     };
 
     return (
         <div>
-            <div  style={{display: 'flex', flexDirection: 'column'}}>
+            <div className={styleClientList.box}>
                 Nuevo usuario:
                 <input placeholder='Nombre' id='nombre' onChange={handleChange} value={dataNewClient.nombre} ></input>
                 <input placeholder='Apellidos' id='apellidos' onChange={handleChange} value={dataNewClient.apellidos}></input>
@@ -50,7 +55,8 @@ const ClientList = () => {
                 <input placeholder='Comida' id='comida' onChange={handleChange} value={dataNewClient.comida}></input>
                 <input placeholder='Bebida' id='bebida' onChange={handleChange} value={dataNewClient.bebida}></input>
 
-                <input type='submit' value='Registrar' onClick={handleSubmit}></input>
+                <input type='submit' value='Registrar' onClick={handleSubmit} className={styleClientList.buttonGradient}></input>
+                {serverMessage && <p className={styleClientList.message}>{serverMessage}</p>}
             </div>
         </div>
     );
