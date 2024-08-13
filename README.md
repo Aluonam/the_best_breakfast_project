@@ -1,20 +1,15 @@
 # the_best_breakfast_project
 
-![Esqueleto con algunos estilos](image.png)
+![Esqueleto con algunos estilos](./img/image.png)
 
 **Esqueleto inicial**
 
-![Esqueleto inicial](image.png)
+![Esqueleto inicial](./img/image-2.png)
 
 
 **Mensaje reflejado en consola:**
 
-![Mensaje consola esqueleto inicial](image-1.png)
-
-
-**Feddback usuario**
-![Ejemplo feedback al usuario](image-2.png)
-
+![Mensaje consola esqueleto inicial](./img/image-1.png)
 
 
 
