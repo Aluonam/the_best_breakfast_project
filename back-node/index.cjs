@@ -22,17 +22,17 @@ app.get('/api/client', (req, res) => {
     });
 });
 
-
-// app.get('/api/client/names', (req, res) => {
-//     connection.query('SELECT name, lastname FROM client', (err, results) => {
-//         if (err) {
-//             console.error('Error al obtener nombres y apellidos:', err);
-//             res.status(500).json({ error: 'Error interno del servidor' });
-//             return;
-//         }
-//         res.json(results);
-//     });
-// });
+// Ruta para obtener todos los nombres de los clientes
+app.get('/api/client/names', (req, res) => {
+    connection.query('SELECT name, lastname FROM client', (err, results) => {
+        if (err) {
+            console.error('Error al obtener nombres y apellidos:', err);
+            res.status(500).json({ error: 'Error interno del servidor' });
+            return;
+        }
+        res.json(results);
+    });
+});
 
 // app.get('/api/breakfast', (req, res) => {
 //     connection.query('SELECT * FROM breakfast', (err, results) => {

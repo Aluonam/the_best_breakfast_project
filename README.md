@@ -45,7 +45,8 @@ Rutas y Navegación: Implementación de rutas dentro de la aplicación usando Re
 
 **PRUEBAS EN POSTMAN**
 
-![GET](get.png)
+![GetAll](getAll.png)
+![GetNames](getNames.png)
 
 
 **4. Documentación (Docusaurus)**
