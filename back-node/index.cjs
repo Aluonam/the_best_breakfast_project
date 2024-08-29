@@ -11,16 +11,16 @@ app.use(express.urlencoded({extended:false}));
 app.use(cors())
 
 // Ruta para obtener todos los clientes
-// app.get('/api/client', (req, res) => {
-//     connection.query('SELECT * FROM client', (err, results) => {
-//         if (err) {
-//             console.error('Error al obtener clientes:', err);
-//             res.status(500).json({ error: 'Error interno del servidor' });
-//             return;
-//         }
-//         res.json(results);
-//     });
-// });
+app.get('/api/client', (req, res) => {
+    connection.query('SELECT * FROM client', (err, results) => {
+        if (err) {
+            console.error('Error al obtener clientes:', err);
+            res.status(500).json({ error: 'Error interno del servidor' });
+            return;
+        }
+        res.json(results);
+    });
+});
 
 
 // app.get('/api/client/names', (req, res) => {

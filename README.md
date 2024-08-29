@@ -43,6 +43,11 @@ Componentización: Diseño de componentes React reutilizables y manejo del estad
 Consumo de APIs: Uso de axios para hacer solicitudes HTTP a los endpoints creados en el backend.
 Rutas y Navegación: Implementación de rutas dentro de la aplicación usando React Router.
 
+**PRUEBAS EN POSTMAN**
+
+![GET](get.png)
+
+
 **4. Documentación (Docusaurus)**
 
 Instalación y Configuración: Instalación de Docusaurus y configuración inicial para la documentación.
@@ -52,3 +57,4 @@ Imagen fondo:
 <a href="https://www.freepik.es/foto-gratis/desayuno_4254372.htm#fromView=search&page=1&position=31&uuid=4c9c9ad0-9dda-4520-8dc4-15cc35946e98">Imagen de freepik</a>
 Estilo botón registrar: https://markodenic.com/tools/buttons-generator/
 Estilo card: https://getcssscan.com/css-box-shadow-examples
+
